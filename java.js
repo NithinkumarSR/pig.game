@@ -4,8 +4,7 @@ let res=0;
 let ch=0;
 const w=function(){
 let a;
-
-if(Number(document.querySelector(y).textContent)>10||Number(document.querySelector(z).textContent>10)){
+if(Number(document.querySelector(y).textContent)>30||Number(document.querySelector(z).textContent>30)){
     document.querySelector('.player').classList.add('hidden');
     document.querySelector('.win').classList.remove('hidden');
     if(z==='.c1') a=1;
@@ -49,17 +48,17 @@ else{
 const img=document.querySelector('.img');
 const inc=function(){
   let c=Math.trunc(Math.random()*6)+1;
-   img.src=`image/dice-${c}.png`;
-   img.classList.remove('hidden')
+   img.src=`/image/dice-${c}.png`;
    res+=Number(c) ;
+   w();
+   img.classList.remove('hidden');
    document.querySelector(z).innerHTML=res;
    if(c===1){
     document.querySelector(z).textContent=0;
     c=0;
     res=0;
     }
-   
-    w();
+
 }
 document.querySelector('.r1').addEventListener('click',inc);
 document.addEventListener('keydown',function(e){
