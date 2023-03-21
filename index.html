@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pig.game/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="win hidden "> <label class="wp"></label></div>
+    <div class="player ">
+        <div class="new">
+            <button class="n"  style="width: 150px; height: 40px; border-radius: 10px; cursor: pointer; font-size: 20px;"><i class="fa-sharp fa-solid fa-rotate-right"></i> new game</button><br></div>
+        <div class="input">
+         <label>
+            <img src="image/dice-1.png" alt="#" class="img hidden" style="height: 100px; width: 100px;">
+         </label> 
+        </div>
+       <div class="roll">
+            <button value="Roll dice" class="r1" style="width: 150px; height: 40px;border-radius: 10px; cursor: pointer; font-size: 20px;"><i class="fa-sharp fa-solid fa-dice"></i> Roll dices</button>
+       </div>
+        <div class="p1">
+    <h1 class="pl1"> player 1</h1>
+    <div class="disp1"> <span class="d1">0</span></div>
+    <label class="p1s"> <span style="margin-left:30px;"> current</span> <span class="c1" style="margin-left:50px;" >0</span></label>
+        </div>
+        <div class="p2">
+    <h1 class="pl2"> player 2</h1>
+    <div class="disp2"> <span class="d2">0</span></div>
+    <label class="p2s">  <span style="margin-left:30px;"> current</span> <span class="c2" style="margin-left:50px;" >0</span></label>
+        </div>
+        <div class="hold">
+            <input type="button" class="h1" value="hold" style="height: 30px; width: 100px; border-radius: 10px;cursor: pointer;"> 
+        </div>
+</div>
+</body>
+<script src="/pig.game/java.js"></script>
+</html>

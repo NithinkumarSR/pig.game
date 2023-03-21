@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   
+}
+/* body{
+    background-color: rgb(95, 137, 185);
+} */
+.player{
+    position: relative;
+   margin-top: 100px;
+    margin-left: 500px;
+    border: solid hsl(0, 7%, 11%) 1px;
+    border-radius: 10px;
+    height: 700px;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px (207,147,165);
+    /* padding: 100px 100px 0px 120px; */
+}
+.win{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+   background-color: rgb(209, 196, 196);
+    margin-top: 100px;
+    margin-left: 500px;
+    box-shadow: 10px 0px 8px #97858566;
+}
+.p1{
+    /* position: absolute; */
+    /* padding: 80px 50px 0px 0px;  */
+    width: 50%;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+    background-color: rgb(119, 147, 165);
+    /* margin-top: ; */
+}
+.p2{
+    /* position: absolute; */
+    /* padding: 80px 0px 50px 0px;  */
+    width: 50%;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    background-color: rgb(207, 141, 202);
+}
+.pl1{
+    margin-top: 50px;
+    margin-left: 100px;
+    /* margin-bottom: 50px; */
+}
+.pl2{
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.disp1{
+    font-size: 100px;
+    margin: 100px 0px 0px 150px;
+}
+.disp2{
+    font-size: 100px;
+    margin: 100px 0px 0px 150px;
+}
+.dice{
+    width: 100px;
+    height: 100px;
+}
+.input{
+   
+   position: absolute;
+ 
+   width: 100px;
+   height: 100px;
+  top: 200px;
+   left: 350px;
+}
+.new{
+    position: absolute;
+    top: 20px;
+    left: 320px;
+}
+.roll{
+    position: absolute;
+    left :320px;
+    top:450px;
+}
+.p1s{
+    position: absolute;
+    top: 430px;
+    left: 120px;
+    border:2px solid rgb(212, 199, 199);
+    font-size: 30px;
+    height: 80px;
+    width: 140px;
+    border-radius: 10px;
+}
+.p2s{
+    position: absolute;
+    top: 430px;
+    left: 550px;
+    font-size: 30px;
+    border:2px solid rgb(233, 220, 220);
+    height: 80px;
+    width: 140px;
+    border-radius: 10px;
+}
+.hold{
+    position: absolute;
+    top: 600px;
+    left: 350px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.wp{
+    position: absolute;
+    margin-top: 250px;
+    font-size: 80px;
+    left: 150px;
+}
