@@ -16,12 +16,13 @@ let x,y,z;
 y='.d1'
 z='.c1'
 const w=function(){
-    if(Number(document.querySelector('.d1').textContent)>10){
+    console.log("hi");
+    if(Number(document.querySelector('.d1').textContent)>20){
         document.querySelector('.wp').textContent=`player 1 win`;
         document.querySelector('.player').classList.add('hidden');
         document.querySelector('.win').classList.remove('hidden');
     }
-    if(Number(document.querySelector('.d2').textContent>10)){
+    if(Number(document.querySelector('.d2').textContent>20)){
         document.querySelector('.wp').textContent=`player 2 win`;
     
         document.querySelector('.player').classList.add('hidden');
@@ -45,13 +46,12 @@ const w=function(){
     }
    } 
 document.querySelector('.h1').addEventListener('click',function(){
-  
-    c=0;
+        c=0;
      let sum=Number(document.querySelector(y).textContent)+Number(res);
   document.querySelector(y).textContent=sum;
   document.querySelector('.c1').textContent=0;
   document.querySelector('.c2').textContent=0;
-  
+  chance();
 w();
 })
 const img=document.querySelector('.img');
@@ -67,6 +67,7 @@ const inc=function(){
     c=0;
     res=0;
     chance();
+    w();
     }
 
 }
